@@ -6,7 +6,7 @@ class Node:
         self.right = None
     
 # A utility function to do inorder traversal of BST
-def inorder(root):
+def inorder(root:Node):
     if root is not None:
         inorder(root.left)
         print(root.key, end=" ")
