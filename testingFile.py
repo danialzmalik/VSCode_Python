@@ -1,25 +1,26 @@
-# import binaryTree
+# from collections import defaultdict
 
-# def sum(a,b):
-#     sum = a+b
-#     return sum
+# d = defaultdict(list)
 
-# a=1
-# b=2
-# c=sum(a,b)
-# print(c)
+# d["c"].append("last")
+# d["a"].append((1,"first"))
+# d["b"].append(2)
+# d["a"].append((3,"third"))
 
-# testNode = binaryTree.Node(5)
-# binaryTree.insert(testNode, 2)
-# binaryTree.inorder(testNode)
+# d = sorted(d.keys())
 
-stack = []
-stack.append("a")
+# print(d)
+# for key in d.keys():
+#     print(key)
+#     for value in d.get(key):
+#         print(f"\t{value}")
 
-while stack:
-    print("hi")
-    stack.pop()
-    # if not stack:
-    #     break
-    # print(stack)
-    # stack.pop()
+lst = [
+ ('a', [1, 2, 3]),
+ ('b', ['blah', 'bhasdf', 'asdf']),
+ ('c', ['one', 'two']),
+ ('d', ['asdf', 'wer', 'asdf', 'zxcv'])
+]
+print(lst)
+d = dict(lst)
+print(d)
